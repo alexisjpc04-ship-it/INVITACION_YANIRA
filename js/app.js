@@ -20,7 +20,7 @@ countdown(); setInterval(countdown, 1000);
 function icsEscape(value) { return value.replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;'); }
 $('calendar').addEventListener('click', () => {
   const stamp = date => date.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
-  const content = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Yanira XV//Invitacion//ES','BEGIN:VEVENT','UID:yanira-xv-20261107@invitacion.local','DTSTAMP:' + stamp(new Date()),'DTSTART:' + stamp(new Date(cfg.fecha)),'SUMMARY:' + icsEscape('XV años de ' + cfg.nombre),'LOCATION:' + icsEscape(cfg.lugar + ', ' + cfg.direccion),'DESCRIPTION:Celebramos los XV años de Yanira Lizeth.','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const content = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Yanira XV//Invitacion//ES','BEGIN:VEVENT','UID:yanira-xv-20261107@invitacion.local','SEQUENCE:1','DTSTAMP:' + stamp(new Date()),'DTSTART:' + stamp(new Date(cfg.fecha)),'SUMMARY:' + icsEscape('XV años de ' + cfg.nombre),'LOCATION:' + icsEscape(cfg.lugar + ', ' + cfg.direccion),'DESCRIPTION:Celebramos los XV años de Yanira Lizeth.','BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:Hoy celebramos los XV años de Yanira a las 7:30 p. m.','TRIGGER;VALUE=DATE-TIME:' + stamp(new Date(cfg.recordatorio)),'END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
   const url = URL.createObjectURL(new Blob([content],{type:'text/calendar;charset=utf-8'}));
   const link = document.createElement('a'); link.href = url; link.download = 'XV-Yanira-Lizeth.ics'; link.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
 });

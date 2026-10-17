@@ -32,3 +32,5 @@ La decoración floral SVG es original, sin personajes ni ilustraciones Disney.
 El reproductor permanece fijo y la página reserva espacio al final. Toca el título de la canción para desplegar la lista y la barra de progreso. Con una sola canción, anterior y siguiente quedan desactivados; al terminar vuelve a comenzar.
 La música requiere la interacción inicial por las reglas de los navegadores. No se interrumpe al desplazarse por la página.
 Se respeta la preferencia del dispositivo de reducir movimiento. Las imágenes se amplían en un diálogo que se cierra con × o Escape.
+
+El calendario incluye un aviso el 7 de noviembre de 2026 a las 9:00 a. m. de Perú. El evento conserva su inicio a las 7:30 p. m. Edita recordatorio en config.js si necesitas cambiar el aviso. La aplicación de calendario debe importar y permitir las notificaciones del aviso.
