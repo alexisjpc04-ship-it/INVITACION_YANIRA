@@ -160,3 +160,45 @@ footer{padding-top:65px;background:#fffef8}footer:after{display:none!important}
 .player{width:min(440px,calc(100% - 24px));border-radius:22px}.player-bar{padding:7px 10px}.album{width:34px;height:40px}.controls button{min-height:40px}.controls .play{width:36px;min-width:36px}.track-info{min-height:40px}
 @media(min-width:1000px){.hero:before{width:380px;height:380px;left:-50px}.hero:after{right:-50px;width:360px;height:360px}}
 @media(max-width:700px){.section{padding:65px 27px}h2{font-size:40px}.hero{padding:32px 22px 42px;min-height:0;height:auto}.hero:before{width:230px;height:230px;left:-25px}.hero:after{width:240px;height:240px;right:-35px;bottom:75px}.hero-intro .crown{width:100px;height:50px;margin-bottom:7px}.quince-title{font-size:28px}.hero h1{font-size:105px}.surname{font-size:8px;margin-bottom:17px}.portrait-wrap{width:min(78%,310px);margin:12px auto 26px}.portrait-ribbon{font-size:21px;padding:11px 24px}.star-one{font-size:48px;left:-28px}.star-two{right:-24px;font-size:30px}.hero-welcome{font-size:25px}.countdown{gap:5px;margin-inline:-9px}.countdown>div{min-width:0;max-width:77px;padding:20px 4px;flex:1;border-radius:45px 45px 12px 12px}.countdown strong{font-size:40px}.countdown b{font-size:18px}.countdown span{font-size:7px}.message:before{inset:10px 14px}.message .parents{font-size:25px}.event-card:after{left:-48px;width:160px;height:160px;bottom:-20px}.rsvp:before{inset:12px}.gallery .photo-button{border-radius:7px;padding:9px 9px 40px}.gallery .photo-button img{border-radius:2px}.gate-frame{padding:28px 15px 24px}.gate-name{font-size:100px}.gate-frame>.eyebrow{font-size:7px}.gate-frame .crown{width:110px;margin-top:20px}.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font-size:21px}.gate-hint{font-size:8px}.gate:before,.gate:after{width:220px;height:220px}}
+
+/* Estilo limpio, luminoso y cursivo; retrato grande como protagonista. */
+body{background:#edf2e2;background-image:none}
+main{width:100%;max-width:none;box-shadow:none}
+.hero{height:100svh;min-height:850px;max-height:1250px;display:block;padding:0;text-align:left;overflow:hidden;background:#eef3e6}
+.hero:before,.hero:after,.gate:before,.gate:after,.event-card:after,.section:after{display:none!important}
+.hero-photo{position:absolute;inset:0 0 0 35%;width:auto;height:100%;aspect-ratio:auto;border-radius:0;background:#eef3e6}
+.hero-photo img{object-fit:cover;object-position:50% 20%;border-radius:0;opacity:1}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#fafbf5 4%,#fafbf5f2 25%,#fafbf555 55%,transparent 78%),linear-gradient(0deg,#fafbf5,transparent 32%)}
+.hero-copy{position:absolute;left:8%;top:23%;text-align:left;max-width:510px}
+.hero h1{font-size:clamp(130px,15vw,210px);line-height:1.15;margin:0 0 4px}
+.quince-title{font-family:var(--script);font-size:46px;margin:0}
+.hero-welcome{font-family:var(--script);font-size:35px;line-height:1.35;margin:27px 0}
+.hero .invitation-date,.hero .scroll-link{justify-content:flex-start}
+.hero .surname{margin-bottom:16px}
+.section{padding:90px max(30px,calc((100% - 780px)/2))}
+h2{font-family:var(--script);font-size:64px;line-height:1.12;letter-spacing:0;font-weight:400}
+h2 em{font-size:1em;color:#6f8750}
+.message{background:radial-gradient(ellipse at 10% 50%,#e5edcf88,transparent 60%),#fffef8}
+.message:before,.rsvp:before{border:0}
+.parents{font-family:var(--script);font-size:33px;line-height:1.45}
+.message .parents{font-size:33px}
+.message .parents-intro{font-family:var(--script);font-size:28px!important;color:#64784b!important}
+#personal-message{font:italic 24px/1.65 var(--serif)}
+.countdown-section{background:#eaf1db;border-radius:0}
+.countdown-section>p{font-family:var(--script);font-size:30px}
+.celebration{background:#fffef8}
+.event-card{border-radius:30px;padding:38px 25px;background:linear-gradient(140deg,#faffef,#e7efd8);max-width:420px}
+.event-card:before{border-radius:22px;border-color:#acbd8a70}
+.event-card h3{font-family:var(--script);font-size:39px}
+.big-day{font-style:italic;color:#6b8351}
+.rsvp{background:radial-gradient(ellipse at 50% 0,#fdfef6,transparent 75%),#e7efd8}
+footer{background:#fffef8}
+footer>p:not(.footer-date):not(.footer-name){font-family:var(--script);font-size:28px}
+.gate{background:radial-gradient(ellipse at 10% 15%,#dce9c3,transparent 55%),radial-gradient(ellipse at 95% 90%,#e2edcd,transparent 55%),#fffef8}
+.gate-frame{border:0;border-radius:0;background:transparent;padding:30px 20px}
+.gate-name{font-size:130px;line-height:1.2}
+.gate-frame .small-caps{font-family:var(--script);font-size:38px}
+.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font-family:var(--script);font-size:29px;line-height:1.4}
+.gate-frame .crown{width:100px;margin:24px auto 6px;opacity:.8}
+.gate-frame:before,.gate-frame:after{color:#a9b77c}
+@media(max-width:700px){.hero{height:100svh;min-height:790px;max-height:1100px}.hero-photo{inset:0;width:100%;height:100%}.hero-photo img{object-position:50% 0}.hero-shade{background:linear-gradient(0deg,#fafbf5 0%,#fafbf5f2 18%,#fafbf5ad 35%,#fafbf505 63%,transparent 85%)}.hero-copy{left:7%;top:auto;bottom:40px;max-width:87%}.hero h1{font-size:115px;line-height:1}.quince-title{font-size:31px}.hero-welcome{font-size:28px;margin:14px 0 20px}.hero .surname{font-size:8px;margin:10px 0}.invitation-date{font-size:27px;gap:14px}.hero .scroll-link{font-size:7px;margin-top:17px}.section{padding:70px 27px}h2{font-size:48px}.message .parents{font-size:28px}#personal-message{font-size:22px}.gate-name{font-size:110px}.gate-frame .small-caps{font-size:34px}.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font-size:27px}.event-card h3{font-size:35px}}

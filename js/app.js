@@ -24,15 +24,6 @@ $('calendar').addEventListener('click', () => {
   const url = URL.createObjectURL(new Blob([content],{type:'text/calendar;charset=utf-8'}));
   const link = document.createElement('a'); link.href = url; link.download = 'XV-Yanira.ics'; link.click(); setTimeout(() => URL.revokeObjectURL(url),1000);
 });
-cfg.fotos.forEach(photo => {
-  const button = document.createElement('button'); button.className = 'photo-button'; button.setAttribute('aria-label','Ampliar: ' + photo.alt);
-  const img = document.createElement('img'); img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width=1024; img.height=1536;
-  const icon = document.createElement('span'); icon.textContent = '↗'; icon.setAttribute('aria-hidden','true'); button.append(img,icon);
-  button.addEventListener('click', () => { $('full-photo').src = photo.src; $('full-photo').alt = photo.alt; $('photo-caption').textContent = photo.titulo || ''; $('lightbox').showModal(); });
-  $('gallery-grid').append(button);
-});
-$('close-photo').addEventListener('click', () => $('lightbox').close());
-$('lightbox').addEventListener('click',e => { if (e.target === $('lightbox')) $('lightbox').close(); });
 const audio = $('audio'); let track = 0;
 function formatTime(seconds) { if (!Number.isFinite(seconds)) return '0:00'; return Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2,'0'); }
 function setTrack(index) {
