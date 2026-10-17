@@ -507,3 +507,26 @@ footer .footer-name{font-size:52px!important}
 .rsvp .button{margin-top:8px}
 @media(max-width:700px){.tiana-medallion{height:clamp(95px,16svh,125px);width:clamp(70px,11svh,92px);margin-bottom:17px}.rsvp h2{font-size:clamp(32px,5.1svh,41px)}.rsvp>.eyebrow{font-size:7px;letter-spacing:.13em}}
 @media(max-height:650px){.tiana-medallion{height:85px;width:64px;margin-bottom:12px}.rsvp h2{font-size:30px;margin:10px 0 14px}.rsvp>p{font-size:12px;margin-bottom:12px}}
+
+/* Detalles de joyería y luz: ornamentación discreta, sin ocupar contenido. */
+.section{position:relative;isolation:isolate}
+.section:before{content:'';position:absolute;inset:22px;pointer-events:none;z-index:-1;background:linear-gradient(#a3b77e80,#a3b77e80) left top/38px 1px no-repeat,linear-gradient(#a3b77e80,#a3b77e80) left top/1px 38px no-repeat,linear-gradient(#a3b77e80,#a3b77e80) right bottom/38px 1px no-repeat,linear-gradient(#a3b77e80,#a3b77e80) right bottom/1px 38px no-repeat;border:0;border-radius:0}
+.message:before,.rsvp:before{inset:22px;border:0;border-radius:0}
+.section>.eyebrow:before,.event-heading>.eyebrow:before{content:'✧';display:inline-block;color:#9b9b65;font-size:17px;vertical-align:middle;line-height:1;margin-right:9px}
+.section>.eyebrow:after,.event-heading>.eyebrow:after{content:'✧';display:inline-block;color:#9b9b65;font-size:17px;vertical-align:middle;line-height:1;margin-left:9px}
+.gold-line{height:1px;width:76px;position:relative;background:linear-gradient(90deg,transparent,#acaa73,transparent)}
+.gold-line:after{content:'';position:absolute;left:calc(50% - 3px);top:-2px;width:5px;height:5px;transform:rotate(45deg);background:#b4b27e;border:2px solid #f8faef;box-sizing:content-box}
+.gate-frame{position:relative}
+.gate-frame:before,.gate-frame:after{content:'';width:50px;height:50px;border:1px solid #a8b78366;transform:rotate(45deg);animation:none;left:calc(50% - 25px);right:auto;top:0;bottom:auto;border-radius:6px;opacity:.7;z-index:-1}
+.gate-frame:after{top:auto;bottom:0;width:32px;height:32px;left:calc(50% - 16px)}
+.event-card{box-shadow:0 14px 45px #536b2e0c;background:radial-gradient(circle at 95% 5%,#fffdeca0,transparent 45%),linear-gradient(140deg,#faffef,#e7efd8)}
+.event-card:before{border-color:#a3b47a70;background:radial-gradient(circle,#a5ad6c 1.5px,transparent 2px) 12px 12px/8px 8px no-repeat,radial-gradient(circle,#a5ad6c 1.5px,transparent 2px) calc(100% - 12px) calc(100% - 12px)/8px 8px no-repeat}
+.countdown>div{box-shadow:inset 0 0 0 4px #fffdf530,0 8px 22px #6f843b0b;border-color:#b1bf8b88}
+.dress-emblem{position:relative;width:120px;text-align:center}
+.dress-emblem:before,.dress-emblem:after{content:'';position:absolute;height:1px;width:35px;top:50%;background:linear-gradient(90deg,transparent,#abb77e)}
+.dress-emblem:before{left:0}.dress-emblem:after{right:0;transform:rotate(180deg)}
+.tiana-medallion:after{content:'✧';text-shadow:14px 35px 0 #c5c99a,-112px 70px 0 #b2bd83;font-size:22px}
+.invitation-date{position:relative}
+.hero .invitation-date:before{content:'';position:absolute;left:0;top:-13px;width:85px;height:1px;background:linear-gradient(90deg,#a2b278,transparent)}
+.song-request{background:radial-gradient(ellipse at 100% 0,#fffbed88,transparent 40%),#eef3e2}
+@media(max-width:700px){.section:before,.message:before,.rsvp:before{inset:14px;background-size:25px 1px,1px 25px,25px 1px,1px 25px}.section>.eyebrow:before,.section>.eyebrow:after,.event-heading>.eyebrow:before,.event-heading>.eyebrow:after{font-size:13px;margin-inline:6px}.gate-frame:before{top:-8px;width:38px;height:38px;left:calc(50% - 19px)}.gate-frame:after{bottom:-5px;width:24px;height:24px;left:calc(50% - 12px)}}
