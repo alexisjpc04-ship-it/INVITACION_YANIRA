@@ -5,15 +5,14 @@ Abre index.html con doble clic. Pulsa «Abrir invitación» para entrar e inicia
 ## Archivos
 - index.html: secciones, textos de fecha, local, padres y diseño general.
 - css/estilos.css: colores, tipografías, composición y animaciones.
-- js/config.js: mensaje, fecha de cuenta regresiva, vestimenta, WhatsApp, fotos y canciones.
+- js/config.js: mensaje, fecha de cuenta regresiva, WhatsApp, fotos y canciones.
 - js/app.js: reproductor, galería, cuenta regresiva y calendario.
 - img/: fotografías y decoración.
 - musica/: canciones.
 
 ## Personalizar
 Edita js/config.js con un editor de texto y conserva comillas y comas.
-El WhatsApp está vacío a propósito: agrega el número con código de país y solo dígitos. Mientras esté pendiente, el botón muestra una explicación y no envía a un número inventado.
-La vestimenta está «Por confirmar»: reemplaza vestimenta y notaVestimenta cuando estén definidas.
+El WhatsApp de confirmación configurado es +51 949 369 948. Puedes cambiarlo en config.js.
 Hay una fotografía y una canción, las proporcionadas. Añade entradas a fotos y canciones para ampliar la galería y la lista; no dupliques entradas para simular contenido.
 Ejemplo de otra canción: {archivo:'musica/otra.mp3', titulo:'Título', artista:'Artista', frase:'Tu frase', portada:'img/portada.jpg'}
 Ejemplo de otra foto: {src:'img/otra.jpg', alt:'Descripción de la fotografía', titulo:'Mi recuerdo'}

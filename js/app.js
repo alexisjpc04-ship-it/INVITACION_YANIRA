@@ -2,8 +2,6 @@
 const cfg = window.INVITACION;
 const $ = id => document.getElementById(id);
 $('personal-message').textContent = cfg.mensaje;
-$('dress-code').textContent = cfg.vestimenta;
-$('dress-note').textContent = cfg.notaVestimenta;
 $('maps').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(cfg.lugar + ', ' + cfg.direccion);
 if (!cfg.whatsapp) $('rsvp-status').textContent = 'El número de confirmación está pendiente. Pronto podrás confirmar tu asistencia por aquí.';
 $('rsvp').addEventListener('click', () => {
