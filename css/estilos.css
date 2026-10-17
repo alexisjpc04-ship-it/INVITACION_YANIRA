@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
@@ -384,3 +385,36 @@ footer .footer-name{font-size:clamp(48px,8svh,65px)!important;font-weight:600}
  .invitation-date{font-size:23px}
 }
 @media(max-height:650px){.section h2{font-size:27px}.message .parents{font-size:17px}.message .parents-intro{font-size:15px!important}.message .signature{font-size:24px}.gate-name{font-size:66px}.hero-welcome{font-size:18px}.event-card h3{font-size:22px}#personal-message{font-size:13px}}
+
+/* Jerarquía editorial: firma protagonista, títulos delicados y lectura limpia. */
+:root{--sans:'Jost',Arial,sans-serif;--serif:'Playfair Display',Georgia,serif;--script:'Great Vibes',cursive}
+body{font-family:var(--sans)}
+.hero h1,.gate-name,.message .signature,footer .footer-name{font-family:'Great Vibes',cursive!important;font-style:normal!important;font-weight:400!important;letter-spacing:0;line-height:1.2}
+.hero h1{font-size:clamp(110px,18svh,180px);margin:8px 0 10px;color:#5c7543}
+.gate-name{font-size:clamp(95px,18svh,145px);margin:12px 0 2px;color:#5c7543}
+.section h2,.section h2 em,.event-card h3,.quince-title,.hero-welcome,.parents,.dress-label{font-family:'Playfair Display',Georgia,serif!important;font-weight:400!important;font-style:normal!important;letter-spacing:-.025em}
+.section h2{font-size:clamp(32px,5.2svh,46px);line-height:1.2;margin:15px 0 25px}
+.section h2 em{font-style:italic!important;color:#75854f;font-size:1em}
+.quince-title{font-size:25px;line-height:1.4;letter-spacing:.02em}
+.hero-welcome{font-size:24px;line-height:1.55}
+.hero .surname{font:400 9px/1.6 var(--sans);letter-spacing:.25em;margin:12px 0 18px}
+.eyebrow{font-family:var(--sans);font-size:9px;letter-spacing:.2em;font-weight:500}
+.gate-frame .small-caps{font:400 11px/1.6 var(--sans);letter-spacing:.3em;margin:0 0 12px}
+.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font:400 21px/1.6 var(--serif)}
+.gate .gold-line{width:40px;margin:24px auto}
+#personal-message{font:400 16px/1.85 var(--sans);letter-spacing:.005em}
+.message .parents-intro{font:400 17px/1.5 var(--sans)!important}
+.message .parents{font-size:22px;line-height:1.6}
+.message .signature{font-size:49px;margin:18px 0 0}
+.countdown strong{font:400 47px/1.1 var(--serif);letter-spacing:-.035em}
+.countdown-section>p{font:400 19px/1.6 var(--serif)}
+.event-card h3{font-size:27px;line-height:1.35}
+.event-time{font-family:var(--serif);font-weight:400}
+.big-day{font-family:var(--serif);font-weight:400;letter-spacing:-.045em}
+.dress-label{font-size:31px;line-height:1.3}
+footer .footer-name{font-size:82px!important}
+.invitation-date{font-family:var(--serif);font-weight:400}
+.button{font:500 13px/1.6 var(--sans);letter-spacing:.035em}
+.track-info strong{font-weight:500}
+@media(max-width:700px){.hero h1{font-size:clamp(100px,16svh,135px)}.gate-name{font-size:clamp(96px,16svh,125px)}.section h2{font-size:clamp(30px,4.8svh,38px);line-height:1.22}.hero-welcome{font-size:21px}.quince-title{font-size:22px}.hero .surname{font-size:8px;letter-spacing:.2em}.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font-size:19px}#personal-message{font-size:15px;line-height:1.7}.message .parents{font-size:20px;line-height:1.5}.message .signature{font-size:44px}.countdown strong{font-size:36px}.event-card h3{font-size:24px}.dress-label{font-size:28px}footer .footer-name{font-size:70px!important}}
+@media(max-height:650px){.section h2{font-size:29px;margin:10px 0 16px}.hero h1{font-size:100px}.gate-name{font-size:92px}.message .parents{font-size:18px;line-height:1.4}.message .signature{font-size:36px;margin-top:10px}#personal-message{font-size:13px;line-height:1.6}.hero-welcome{font-size:19px}}
