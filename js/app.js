@@ -57,3 +57,12 @@ audio.addEventListener('error',() => {$('audio-status').textContent='No se pudo 
 $('open').addEventListener('click',() => { $('gate').classList.add('opened'); $('gate').setAttribute('inert',''); document.body.classList.remove('locked'); $('invitation').inert=false; $('player').hidden=false; if(cfg.canciones.length) play(); document.querySelector('.scroll-link').focus({preventScroll:true}); });
 if('IntersectionObserver' in window) { const observer = new IntersectionObserver(entries => entries.forEach(entry => {if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12}); document.querySelectorAll('.reveal').forEach(el => observer.observe(el)); } else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches) for(let i=0;i<25;i++){const dot=document.createElement('i');dot.className='firefly';dot.style.left=Math.random()*100+'%';dot.style.top=Math.random()*100+'%';dot.style.setProperty('--speed',6+Math.random()*8+'s');dot.style.setProperty('--delay',-Math.random()*12+'s');$('lights').append(dot);}
+
+// El apartado se activa cuando está disponible la conexión publicada.
+if (cfg.formularioCanciones) {
+  const formUrl = new URL(cfg.formularioCanciones);
+  if (formUrl.protocol === 'https:' && formUrl.hostname === 'script.google.com') {
+    $('song-form').src = formUrl.href;
+    $('canciones-invitados').hidden = false;
+  }
+}

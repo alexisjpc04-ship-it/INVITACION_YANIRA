@@ -486,3 +486,8 @@ footer .footer-name{font-size:52px!important}
  .invitation-date{font-size:24px;gap:13px}.invitation-date span{font-size:8px;padding:7px 0}
 }
 @media(max-height:650px){.hero h1{font-size:85px}.hero-welcome{font-size:21px}.hero-copy{padding-bottom:0}.gate-name{font-size:85px}}
+
+.song-request{background:#eef3e2}
+.song-request>p{font:400 14px/1.7 var(--sans);max-width:440px}
+#song-form{border:0;width:100%;max-width:460px;height:280px;flex-shrink:0;background:transparent}
+.song-request .song-privacy{font-size:11px;color:#637344;margin:0}
