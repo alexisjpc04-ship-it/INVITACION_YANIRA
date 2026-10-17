@@ -530,3 +530,16 @@ footer .footer-name{font-size:52px!important}
 .hero .invitation-date:before{content:'';position:absolute;left:0;top:-13px;width:85px;height:1px;background:linear-gradient(90deg,#a2b278,transparent)}
 .song-request{background:radial-gradient(ellipse at 100% 0,#fffbed88,transparent 40%),#eef3e2}
 @media(max-width:700px){.section:before,.message:before,.rsvp:before{inset:14px;background-size:25px 1px,1px 25px,25px 1px,1px 25px}.section>.eyebrow:before,.section>.eyebrow:after,.event-heading>.eyebrow:before,.event-heading>.eyebrow:after{font-size:13px;margin-inline:6px}.gate-frame:before{top:-8px;width:38px;height:38px;left:calc(50% - 19px)}.gate-frame:after{bottom:-5px;width:24px;height:24px;left:calc(50% - 12px)}}
+
+/* Primera tipografía de la invitación: Cormorant Garamond + DM Sans. */
+:root{--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--script:'Cormorant Garamond',Georgia,serif}
+body{font-family:var(--sans)}
+h1,h2,h3,.hero h1,.gate-name,.message .signature,footer .footer-name,.quince-title,.hero-welcome,.parents,.dress-label{font-family:var(--serif)!important;font-style:normal!important;font-weight:400!important}
+.hero h1,.gate-name{letter-spacing:-.055em}
+h2{letter-spacing:-.035em}
+.section h2{font-weight:400!important}
+.section h2 em{font-family:var(--serif)!important;font-weight:400!important;font-style:italic!important}
+.hero .quince-title{font-style:normal!important}
+.hero-welcome,.message .signature,footer .footer-name{font-style:italic!important}
+.message .parents{font-family:var(--serif)!important;font-weight:400!important;font-style:normal!important}
+#personal-message,.message .parents-intro,.button,.eyebrow,.small-caps{font-family:var(--sans)!important}
