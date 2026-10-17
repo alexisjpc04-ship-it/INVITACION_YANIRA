@@ -491,3 +491,19 @@ footer .footer-name{font-size:52px!important}
 .song-request>p{font:400 14px/1.7 var(--sans);max-width:440px}
 #song-form{border:0;width:100%;max-width:460px;height:280px;flex-shrink:0;background:transparent}
 .song-request .song-privacy{font-size:11px;color:#637344;margin:0}
+
+/* Acentos de cuento y decoración aportada por la familia. */
+.hero h1,.gate-name{font-family:'Cormorant Garamond',Georgia,serif!important;font-style:italic!important;font-weight:500!important;letter-spacing:-.055em;line-height:1.06;text-shadow:0 2px 14px #fffef575}
+.section h2{font-weight:600!important;letter-spacing:-.035em}
+.section h2 em{font-style:italic!important;font-weight:500!important}
+.message .signature,footer .footer-name{font-style:italic!important;font-weight:500!important}
+.hero .quince-title{font-style:italic!important;letter-spacing:.01em}
+.tiana-medallion{height:clamp(100px,17svh,145px);width:clamp(78px,12svh,105px);position:relative;margin:0 auto 18px;flex-shrink:0;isolation:isolate}
+.tiana-medallion:before{content:'';position:absolute;inset:-6px -8px;border:1px solid #a3b57d88;border-radius:50%;transform:rotate(12deg);z-index:-1}
+.tiana-medallion:after{content:'✧';position:absolute;right:-22px;top:5px;color:#8b9d65;font-size:24px}
+.tiana-medallion img{width:100%;height:100%;object-fit:cover;object-position:50% 54%;border-radius:50%;display:block}
+.rsvp h2{margin:12px 0 20px}
+.rsvp>p{margin-bottom:15px}
+.rsvp .button{margin-top:8px}
+@media(max-width:700px){.tiana-medallion{height:clamp(95px,16svh,125px);width:clamp(70px,11svh,92px);margin-bottom:17px}.rsvp h2{font-size:clamp(32px,5.1svh,41px)}.rsvp>.eyebrow{font-size:7px;letter-spacing:.13em}}
+@media(max-height:650px){.tiana-medallion{height:85px;width:64px;margin-bottom:12px}.rsvp h2{font-size:30px;margin:10px 0 14px}.rsvp>p{font-size:12px;margin-bottom:12px}}
