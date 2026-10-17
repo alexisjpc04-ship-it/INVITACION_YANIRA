@@ -4,3 +4,57 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.firefly{display:none}}
 
 #personal-message{white-space:pre-line}
+
+/* Paleta clara: marfil, salvia, oliva y champán. */
+:root{--green:#40563b;--deep:#fafbf5;--gold:#776a3d;--cream:#fffef9;--muted:#58634f}
+body{background:var(--deep);color:#344331}
+.eyebrow,.small-caps{color:#637344}
+h2 em,h1 span,.signature,footer .footer-name{color:#657846}
+.gold-line{background:#b3aa7d}
+.button{background:#627647;border-color:#627647;color:#fffef6}
+.button:hover{background:#4c6036}
+.topbar{color:#384c32;border-bottom-color:#6b805333;background:#fffef53d}
+.topbar span{color:#647443}
+.hero{background:#eff3e6}
+.hero-photo img{opacity:1}
+.hero-shade{background:linear-gradient(90deg,#fafbf5 4%,#fafbf5ed 26%,#fafbf54d 57%,transparent 80%),linear-gradient(0deg,#fafbf5,transparent 40%)}
+.hero-welcome{color:#46543d}
+.hero-date,.hero-date i,.scroll-link span{color:#52663c}
+.message{background:radial-gradient(ellipse at 0 15%,#dae5c6aa,transparent 48%),radial-gradient(ellipse at 100% 80%,#edf0dc,transparent 50%),#fffef9}
+.message:before,.rsvp:before{content:'';position:absolute;inset:18px;border:1px solid #8d9c6833;pointer-events:none}
+.parents span{color:#77834f}
+.countdown-section{background:#eaf0df;color:#3e5137}
+.countdown-section h2 em{color:#647846}
+.countdown-section .eyebrow{color:#647344}
+.countdown-section>p{color:#526444}
+.countdown b{color:#929c72}
+.celebration{background:radial-gradient(ellipse at 0 80%,#dce7c7aa,transparent 65%),#f9faf3}
+.event-card{background:#fffff4db;border-color:#9aaa79;box-shadow:0 16px 65px #6271440d}
+.event-card:before{border-color:#aab78c55}
+.big-day{color:#667b49}
+.event-card p{color:#536149}
+.gallery{background:#fffef9}
+.photo-button{background:#e4ead6;border:1px solid #bec7a3;padding:8px}
+.photo-button span{background:#f9fcf0e8;color:#435834;border-color:#7e9060}
+.gallery-caption{color:#647344}
+.rsvp{background:radial-gradient(ellipse at 100% 5%,#cbdca9aa,transparent 52%),radial-gradient(ellipse at 0 100%,#dfe8c8bb,transparent 55%),#f1f5e7}
+.rsvp>p{color:#536149}
+footer{background:#fafbf5}
+footer>p{color:#58634f}
+.credits{color:#63734e}
+.gate{background:radial-gradient(ellipse at 15% 15%,#cbdca9aa,transparent 48%),radial-gradient(ellipse at 90% 85%,#d7e4bc,transparent 55%),#fffef7;color:#3e5237}
+.gate:before{border-color:#98a67b88}.gate:after{border-color:#b8c59b66}
+.gate-name{color:#647847}
+.gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){color:#56634a}
+.gate-hint{color:#5b684e}
+.player{background:#fffff7f5;border-color:#a2b18199;box-shadow:0 8px 35px #40552c26;color:#344331}
+.track-info span,.seek-row,#audio-status{color:#5a684d}
+.controls button,.playlist-heading button,.playlist-heading span{color:#536a3d}
+.controls .play{background:#627647;color:#fffef7}
+.playlist{border-bottom-color:#a6b78c55}
+.track-option{border-color:#a8b78b66;background:#f0f4e6}
+.track-option.active{border-color:#617743;color:#405b2e}
+.firefly{width:4px;height:4px;background:#b6a65b;box-shadow:0 0 12px 4px #c2b56d66}
+dialog{background:#fafbf5;color:#344331;border-color:#9aaa79}
+#close-photo{background:#fafff0ed;color:#405834;border-color:#7e9060}
+@media(max-width:700px){.hero-photo img{opacity:1}.hero-shade{background:linear-gradient(0deg,#fafbf5 0%,#fafbf5f5 17%,#fafbf5b0 36%,#fafbf510 64%,transparent 80%),linear-gradient(180deg,#fafbf580,transparent 22%)}.hero-copy{bottom:85px}.hero-welcome{color:#3e5136}}
