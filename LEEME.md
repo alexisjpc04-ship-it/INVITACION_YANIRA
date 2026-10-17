@@ -1,4 +1,4 @@
-# Invitación de XV años — Yanira Lizeth
+# Invitación de XV años — Yanira
 
 Abre index.html con doble clic. Pulsa «Abrir invitación» para entrar e iniciar la música. No necesita instalación ni compilación.
 
