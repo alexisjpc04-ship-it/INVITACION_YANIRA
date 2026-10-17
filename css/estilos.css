@@ -463,3 +463,26 @@ footer .footer-name{font-size:52px!important}
  .gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font-size:23px}
 }
 @media(max-height:650px){.section h2{font-size:33px}.hero h1{font-size:50px}.hero-welcome{font-size:19px}.message .parents{font-size:21px}#personal-message{font-size:13px}.gate-name{font-size:63px}}
+
+/* Recuperar la portada con texto sobre la foto. */
+.hero-copy{background:none;border:0;border-radius:0;padding:0 0 50px;box-shadow:none;left:8%;top:50%;bottom:auto;transform:translateY(-50%);width:min(45%,510px);max-width:510px;text-align:left}
+.hero-photo{inset:0 0 0 35%;width:auto;height:100%;background:#eef3e6}
+.hero-photo img{object-fit:cover;object-position:50% 20%;background:none}
+.hero-shade{background:linear-gradient(90deg,#fafbf5 4%,#fafbf5f2 25%,#fafbf555 55%,transparent 78%),linear-gradient(0deg,#fafbf5,transparent 32%)!important}
+.hero h1,.gate-name,.message .signature,footer .footer-name{font-family:'Cormorant Garamond',Georgia,serif!important;font-style:normal!important;font-weight:500!important;letter-spacing:-.045em}
+.hero h1{font-size:clamp(95px,17svh,165px);line-height:1.05;margin:0 0 4px}
+.gate-name{font-size:clamp(85px,16svh,125px);line-height:1.1}
+@media(max-width:700px){
+ .hero-photo{inset:0;width:100%;height:100%}
+ .hero-photo img{object-fit:cover;object-position:50% 0}
+ .hero-shade{background:linear-gradient(0deg,#fafbf5 0%,#fafbf5f2 18%,#fafbf5ad 35%,#fafbf505 63%,transparent 85%)!important}
+ .hero-copy{left:7%;top:auto;bottom:95px;transform:none;padding:0;max-width:86%;width:86%;text-align:left;background:none;border:0}
+ .hero h1{font-size:clamp(85px,14svh,118px);margin:4px 0 12px}
+ .hero .invitation-date,.hero .scroll-link{justify-content:flex-start}
+ .hero-welcome{font-size:24px;line-height:1.3;margin:15px 0 20px}
+ .quince-title{font-size:25px;line-height:1.4}
+ .hero .surname{font-size:8px;letter-spacing:.13em;margin:7px 0}
+ .hero .scroll-link{font-size:7px;margin-top:12px}
+ .invitation-date{font-size:24px;gap:13px}.invitation-date span{font-size:8px;padding:7px 0}
+}
+@media(max-height:650px){.hero h1{font-size:85px}.hero-welcome{font-size:21px}.hero-copy{padding-bottom:0}.gate-name{font-size:85px}}
