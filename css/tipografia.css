@@ -1,22 +1,29 @@
 /* Tipografía suave: Allura para firmas y acentos; Lora para títulos; DM Sans para lectura. */
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
-:root{--signature:'Allura','Segoe Script',cursive;--heading:'Lora',Georgia,serif;--reading:'DM Sans',Arial,sans-serif;--warm-gold:#936d32}
+:root{--signature:'Allura','Segoe Script',cursive;--heading:'Lora',Georgia,serif;--reading:'DM Sans',Arial,sans-serif;--warm-gold:#607c4e}
 body{font-family:var(--reading)}
 .hero h1,.gate .gate-name,.message .signature,footer .footer-name{font-family:var(--signature)!important;font-weight:400!important;font-style:normal!important;letter-spacing:0!important;color:var(--warm-gold);text-shadow:0 1px 0 #fff9eaaa;line-height:1.12!important}
 .hero h1{font-size:clamp(120px,17svh,175px)!important;margin:0 0 8px;padding-right:12px}
 .gate .gate-name{font-size:clamp(105px,17svh,145px)!important;margin:10px 0 4px;padding-inline:10px}
 .section h2{font-family:var(--heading)!important;font-size:clamp(31px,4.7svh,43px)!important;font-weight:400!important;font-style:italic!important;line-height:1.28!important;letter-spacing:-.035em!important}
 .section h2 em{font-family:var(--signature)!important;font-style:normal!important;font-weight:400!important;font-size:1.35em!important;line-height:1.1!important;letter-spacing:0!important;color:var(--warm-gold)}
-.hero .quince-title{font:400 25px/1.4 var(--signature)!important;color:#796238;letter-spacing:.015em!important}
+.hero .quince-title{font:400 25px/1.4 var(--signature)!important;color:#60734c;letter-spacing:.015em!important}
 .hero .hero-welcome{font:400 21px/1.55 var(--heading)!important;font-style:italic!important;letter-spacing:-.02em}
 .gate-frame>p:not(.gate-name):not(.small-caps):not(.gate-hint){font:400 18px/1.7 var(--reading)!important}
 .message .parents{font:400 20px/1.65 var(--heading)!important;font-style:italic!important;letter-spacing:-.02em}
 .message .parents span{color:var(--warm-gold)}
 .message .signature{font-size:51px!important;margin-top:15px}
 .event-card h3{font:400 26px/1.4 var(--heading)!important;font-style:italic!important;letter-spacing:-.02em}
-.dress-label{font:400 31px/1.35 var(--heading)!important;font-style:italic!important;color:#7f612e}
+.dress-label{font:400 31px/1.35 var(--heading)!important;font-style:italic!important;color:#526c40}
 footer .footer-name{font-size:85px!important}
 #personal-message{font:400 15px/1.8 var(--reading)!important}
 .countdown-section>p{font:italic 18px/1.7 var(--heading)}
 @media(max-width:700px){.hero h1{font-size:clamp(103px,15svh,130px)!important}.gate .gate-name{font-size:clamp(95px,15svh,120px)!important}.section h2{font-size:clamp(28px,4.3svh,34px)!important}.section h2 em{font-size:1.4em!important}.hero .hero-welcome{font-size:18px!important;line-height:1.5!important}.hero .quince-title{font-size:24px!important}.message .parents{font-size:18px!important}.event-card h3{font-size:24px!important}.dress-label{font-size:27px!important}.message .signature{font-size:46px!important}footer .footer-name{font-size:74px!important}#personal-message{font-size:14px!important}}
 @media(max-height:650px){.hero h1{font-size:100px!important}.gate .gate-name{font-size:90px!important}.section h2{font-size:27px!important}.message .parents{font-size:17px!important}.hero .hero-welcome{font-size:17px!important}#personal-message{font-size:13px!important}}
+
+/* Salvia y oliva: acentos suaves, sin letras doradas. */
+.hero h1,.gate .gate-name,.message .signature,footer .footer-name{color:#587647;text-shadow:none}
+.section h2{color:#405b3d;font-style:normal!important;font-weight:400!important}
+.section h2 em{color:#6b8654}
+.hero .quince-title{color:#5b7549}
+.dress-label,.message .parents span{color:#587647}
